@@ -1,0 +1,121 @@
+html{
+scroll-behavior: smooth;
+}
+
+:root {
+    --font-size-s: 12pt;
+    --font-size-m: 12pt;
+    --font-size-l: 20pt;
+    --font-size-xl: 60pt;
+    --line-height1: 20pt;
+    --yellow: rgb(255, 255, 0);
+    --light-blue: rgb(0, 255, 255);
+    --green: rgb(0, 255, 0);
+    --pink: rgb(255, 0, 255);
+    --red: rgb(255, 0, 0);
+    --dark-blue: rgb(0, 0, 255);
+    --white: rgb(255, 255, 255);
+    --grey: rgb(190, 190, 190);
+    --black: rgb(0, 0, 0);
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background-color: var(--grey);
+}
+
+
+.page{
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  margin: auto;
+}
+
+.chapter{
+  position: relative;
+
+}
+
+
+.title{
+  color: var(--white);
+  background-color: var(--black);
+  border-radius: 100px;
+
+  font-family: Arial, sans-serif;
+  font-size: var(--font-size-l);
+  text-align: center;
+   position: relative;
+   width: 90%;
+   padding-top: 67.5%;
+   margin: auto;
+}
+
+.title-text{
+  position:  absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   text-align: center;
+   color: white;
+}
+
+.text{
+  width: 80%;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  font-size: var(--font-size-m);
+  margin:auto;
+}
+
+
+.menu{
+  z-index: 20;
+  position: fixed;
+  background-color: var(--white);
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
+  margin: 0;
+}
+
+.color-bar{
+  height: 100%;
+  width: 14.28%;
+  position: relative;
+  float: left;
+}
+
+#yellow{
+  background-color: var(--yellow);
+}
+
+#light-blue{
+  background-color: var(--light-blue);
+}
+
+#green{
+  background-color: var(--green);
+}
+
+#pink{
+  background-color: var(--pink);
+}
+
+#red{
+  background-color: var(--red);
+}
+
+#dark-blue{
+  background-color: var(--dark-blue);
+}
+
+#black{
+  background-color: var(--black);
+}
