@@ -1,3 +1,11 @@
+function contentToHtml(text) {
+  return text
+    .split('\n\n')
+    .map(paragraph => `<p>${paragraph}</p>`)
+    .join('')
+}
+
+
 $(document).ready(function() {
     var audioElement1 = document.createElement('audio');
     audioElement1.setAttribute('src', 'https://raw.githubusercontent.com/paprika-mika/romantic-poetry/master/media/sehnsucht.mp3');

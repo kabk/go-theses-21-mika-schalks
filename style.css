@@ -38,41 +38,28 @@ body {
 
 .chapter{
   position: relative;
-
+  background-color: var(--white)
 }
 
 
 .title{
-  color: var(--white);
-  background-color: var(--black);
-  border-radius: 100px;
-
-  font-family: Arial, sans-serif;
-  font-size: var(--font-size-l);
-  text-align: center;
    position: relative;
-   width: 90%;
-   padding-top: 67.5%;
+   width: 95%;
    margin: auto;
 }
 
-.title-text{
-  position:  absolute;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   right: 0;
-   text-align: center;
-   color: white;
-}
 
 .text{
-  width: 80%;
+  width: 78%;
+  max-width: 78%;
   text-align: left;
   font-family: Arial, sans-serif;
   font-size: var(--font-size-m);
-  margin:auto;
+  margin-left:18%;
+  text-indent: 2em;
 }
+
+
 
 
 .menu{
