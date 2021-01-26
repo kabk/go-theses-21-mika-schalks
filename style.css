@@ -27,6 +27,11 @@ body {
   background-color: var(--grey);
 }
 
+@font-face {
+   font-family: pica;
+   src: url(files/Pica.ttf);
+}
+
 
 .page{
   position: absolute;
@@ -57,6 +62,21 @@ body {
   font-size: var(--font-size-m);
   margin-left:18%;
   text-indent: 2em;
+}
+
+p{
+  text-indent: 2em;
+}
+
+.script{
+  text-indent: -2em;
+  text-align: center;
+  font-family: pica;
+
+}
+
+.link{
+  color: red;
 }
 
 
