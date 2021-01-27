@@ -115,11 +115,11 @@ i {
 
 .object{
   position: relative;
-  height: 75vh;
-  width: 120%;
+  width: 100%;
+  height:auto;
   z-index: 19;
   display: block;
-  margin-left: -10%;
+
   margin-bottom: 20px;
 
 
