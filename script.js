@@ -8,9 +8,13 @@ $(window).scroll(function(){;
     }else if(w<=$('#episode-2').offset().top){
          document.documentElement.style.setProperty('--bars', '0, 255, 0');
     }else if(w<=$('#episode-3').offset().top){
-         $('#episode-2').css( 'background-color', 'yellow' );
+         document.documentElement.style.setProperty('--bars', '255, 0, 255');
+    }else if(w<=$('#finale').offset().top){
+         document.documentElement.style.setProperty('--bars', '255, 0, 0');
+    }else if(w<=$('#credits').offset().top){
+        document.documentElement.style.setProperty('--bars', '0, 0, 255');
     }else{
-         $('#status-5').css( 'background-color', 'blue' );
+         document.documentElement.style.setProperty('--bars', '255, 255, 255');
     }
 
 });

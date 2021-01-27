@@ -91,14 +91,22 @@ p{
 }
 
 .script{
-  text-indent: -2em;
+
   text-align: center;
   font-family: pica;
 
 }
 
-.link{
-  color: red;
+i {
+  background-color: rgb(var(--bars));
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 5px;
+  font-family: pica;
+  font-style: normal;
+  border: 1px solid black;
 }
 
 
@@ -112,7 +120,7 @@ p{
   height: 50px;
   bottom: 0px;
   margin: 0;
-  box-shadow: 0 0 30px #333;
+  box-shadow: 0 0 20px #333;
 }
 
 .color-bar{
