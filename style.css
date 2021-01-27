@@ -116,12 +116,12 @@ i {
 .object{
   position: relative;
   height: 75vh;
-  width: 125%;
+  width: 120%;
   z-index: 19;
   display: block;
-  margin-left: -12.5%;
+  margin-left: -10%;
   margin-bottom: 20px;
-  background-color: rgb(var(--bars));
+
 
 
 }
