@@ -34,33 +34,43 @@ body {
 
 
 .page{
-  position: absolute;
-  min-height: 100vh;
-  width: 100%;
-  background-color: white;
+  position: relative;
+  min-height: 98vh;
+  width: 98%;
+  background-color: var(--grey);
   margin: auto;
 }
 
 .chapter{
   position: relative;
-  background-color: var(--white)
+  background-color: var(--white);
+  border-radius: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+
+  box-shadow: 0 0 30px #333;
 }
+
+
 
 
 .title{
    position: relative;
    width: 95%;
    margin: auto;
+
 }
 
 
 .text{
-  width: 78%;
-  max-width: 78%;
+  width: 88%;
+  max-width: 88%;
   text-align: left;
   font-family: Arial, sans-serif;
   font-size: var(--font-size-m);
-  margin-left:18%;
+  margin-left:8%;
   text-indent: 2em;
 }
 
@@ -90,6 +100,7 @@ p{
   height: 50px;
   bottom: 0px;
   margin: 0;
+  box-shadow: 0 0 30px #333;
 }
 
 .color-bar{
@@ -97,6 +108,7 @@ p{
   width: 14.28%;
   position: relative;
   float: left;
+
 }
 
 #yellow{
