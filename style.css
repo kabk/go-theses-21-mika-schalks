@@ -108,10 +108,15 @@ p{
 }
 
 .script{
-
   text-align: center;
   font-family: pica;
+}
 
+.script-bottom{
+  width: 90%;
+  text-align: center;
+  font-family: pica;
+  margin: auto;
 }
 
 i {
