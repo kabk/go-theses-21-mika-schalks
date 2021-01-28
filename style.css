@@ -126,6 +126,7 @@ i {
   margin-bottom: 20px;
   background-color: rgb(var(--bars));
   border-radius: 50px;
+  box-shadow: 2px 2px 5px black;
 
 
 
