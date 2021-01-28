@@ -71,8 +71,8 @@ background: linear-gradient(0deg, rgb(var(--bars)) 0%, rgb(var(--bars)) 10%, rgb
    position: relative;
    width: 95%;
    margin: auto;
+   margin-bottom: 10px;
    /*filter: drop-shadow(0px 0px 5px rgb(var(--bars)));*/
-
 }
 
 .part{
@@ -84,9 +84,11 @@ background: linear-gradient(0deg, rgb(var(--bars)) 0%, rgb(var(--bars)) 10%, rgb
 }
 
 .panel {
+  background-color: var(--white);
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 1s ease-out;
+  box-shadow: inset 0 0 15px black;
 }
 
 
@@ -146,6 +148,16 @@ i {
 
 */
 
+}
+
+.footer{
+  width: 98%;
+  left: 2%;
+  position: relative;
+  background-color: var(--grey);
+  border-radius: 0px;
+
+  padding-bottom: 100px;
 }
 
 .menu{
