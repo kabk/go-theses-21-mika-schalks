@@ -4,7 +4,7 @@ scroll-behavior: smooth;
 
 :root {
     --font-size-s: 12pt;
-    --font-size-m: 12pt;
+    --font-size-m: 15px;
     --font-size-l: 20pt;
     --font-size-xl: 60pt;
     --line-height1: 20pt;
@@ -14,7 +14,7 @@ scroll-behavior: smooth;
     --pink: rgb(255, 0, 255);
     --red: rgb(255, 0, 0);
     --dark-blue: rgb(0, 0, 255);
-    --white: rgb(190, 190, 190);
+    --white: rgb(255, 255, 255);
     --grey: rgb(190, 190, 190);
     --black: rgb(0, 0, 0);
     --bars: 255, 255, 255;
@@ -52,16 +52,15 @@ background: linear-gradient(0deg, rgb(var(--bars)) 0%, rgb(var(--bars)) 10%, rgb
 }
 
 .chapter{
-  width: 95%;
-
+  width: 98%;
+  left: 2%;
   position: relative;
-  background-color: var(--white);
+  background-color: var(--grey);
   border-radius: 0px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+
   padding-top: 10px;
-  padding-bottom: 50px;
-  margin: auto;
+
+
   /*box-shadow: 0 0 30px #333;*/
 }
 
@@ -72,7 +71,22 @@ background: linear-gradient(0deg, rgb(var(--bars)) 0%, rgb(var(--bars)) 10%, rgb
    position: relative;
    width: 95%;
    margin: auto;
+   /*filter: drop-shadow(0px 0px 5px rgb(var(--bars)));*/
 
+}
+
+.part{
+   position: relative;
+   width: 95%;
+   margin: auto;
+   filter: drop-shadow(0px 0px 5px rgb(var(--bars)));
+
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 
@@ -117,18 +131,20 @@ i {
 
 .object{
   position:  relative;
-  width: 93%;
-  left: -5.5%;
-  padding: 30px;
+  width: 100%;
   height:auto;
   z-index: 19;
   display: block;
   margin-bottom: 20px;
+  /*filter: drop-shadow(0px 0px 5px rgb(var(--bars)));
+
   background-color: rgb(var(--bars));
   border-radius: 50px;
   box-shadow: 2px 2px 5px black;
+  left: -5.5%;
+  padding: 30px;
 
-
+*/
 
 }
 
@@ -137,7 +153,7 @@ i {
   position: fixed;
   background-color: var(--white);
   width: 100%;
-  height: 50px;
+  height: 30px;
   bottom: 0px;
   margin: 0;
   box-shadow: 0 0 20px #333;
