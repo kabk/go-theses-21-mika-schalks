@@ -113,15 +113,27 @@ i {
   /*box-shadow: 0 0 30px rgb(var(--bars));*/
 }
 
+
+
 .object{
-  position: relative;
-  width: 100%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+
+
+
+  /*
+  position: fixed;
+  width: 90%;
   height:auto;
   z-index: 19;
-  display: block;
 
+  z-index: 30;
   margin-bottom: 20px;
-
+*/
 
 
 }
