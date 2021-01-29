@@ -69,6 +69,10 @@ background: linear-gradient(0deg, rgb(var(--bars)) 0%, rgb(var(--bars)) 10%, rgb
   /*box-shadow: 0 0 30px #333;*/
 }
 
+.chapter:first{
+  border-top: 5pt solid var(--white);
+}
+
 
 
 
@@ -77,6 +81,7 @@ background: linear-gradient(0deg, rgb(var(--bars)) 0%, rgb(var(--bars)) 10%, rgb
    width: 95%;
    margin: auto;
    margin-bottom: 10px;
+   filter: drop-shadow(0px 0px 3px grey);
    /*filter: drop-shadow(0px 0px 5px rgb(var(--bars)));*/
 }
 
@@ -175,14 +180,14 @@ i {
   background-color: var(--grey);
 
   border-radius: 0px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   padding-top: 10px;
 
-  border-top: 5pt solid var(--white);
+
   border-bottom: 5pt solid var(--black);
 }
 
-.header::after{
+.header:before{
   border-top: 5pt solid var(--black);
   border-bottom: 5pt solid var(--white);
 }
@@ -209,7 +214,7 @@ i {
   margin: auto;
   left: 2.5%;
   z-index: 19;
-  filter: drop-shadow(0px 0px 3px grey);
+
 }
 
 #queer-cover1{
@@ -217,7 +222,7 @@ i {
   margin: auto;
   left: 2.5%;
   z-index: 18;
-  filter: drop-shadow(0px 0px 3px grey);
+
 }
 
 #queer-cover2{
@@ -225,7 +230,7 @@ i {
   margin: auto;
   left: 2.5%;
   z-index: 17;
-  filter: drop-shadow(0px 0px 3px grey);
+
 }
 
 
