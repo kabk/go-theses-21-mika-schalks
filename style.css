@@ -6,7 +6,7 @@ scroll-behavior: smooth;
     --font-size-s: 12pt;
     --font-size-m: 15px;
     --font-size-l: 20pt;
-    --font-size-xl: 60pt;
+    --font-size-xl: 30pt;
     --line-height1: 20pt;
     --yellow: rgb(255, 255, 0);
     --light-blue: rgb(0, 255, 255);
@@ -30,6 +30,11 @@ body {
 @font-face {
    font-family: pica;
    src: url(files/Pica.ttf);
+}
+
+@font-face {
+   font-family: playbill;
+   src: url(files/PLAYBILL.ttf);
 }
 
 
@@ -89,6 +94,8 @@ background: linear-gradient(0deg, rgb(var(--bars)) 0%, rgb(var(--bars)) 10%, rgb
   overflow: hidden;
   transition: max-height 1s ease-out;
   box-shadow: inset 0 0 15px black;
+  border-top: 5pt solid var(--black);
+  border-bottom: 5pt solid var(--white);
 }
 
 
@@ -169,7 +176,42 @@ i {
 
   border-radius: 0px;
   padding-bottom: 100px;
-  padding-top: 100px;
+  padding-top: 10px;
+}
+
+.header-text{
+       position: relative;
+       text-align: center;
+       font-family: playbill;
+       color: var(--white);
+       font-size: 15vw;
+       line-height: 1.2;
+       text-shadow: 0.06rem 0 0.06rem var(--pink), -0.125rem 0 0.06rem var(--yellow);
+
+       animation-duration: 0.01s;
+       animation-name: textflicker;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+
+       padding-top: 5vh;
+}
+
+#queer-cover{
+  position: absolute;
+  margin: auto;
+  left: 2.5%;
+  z-index: 19;
+  filter: drop-shadow(0px 0px 3px black);
+}
+
+
+@keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 var(--pink), -2px 0 0 var(--yellow);
+  }
+  to {
+    text-shadow: 2px 0.5px 2px var(--pink), -1px -0.5px 2px var(--yellow);
+  }
 }
 
 .footer{
