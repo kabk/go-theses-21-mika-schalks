@@ -75,3 +75,16 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+$('div.rect', '#queer-cover').bind('taphold', function(event, ui) {
+    var offset = $(this).offset();
+    var type   = $.mobile.touchEnabled ? 'touchstart' : 'mousedown';
+    var newevent = $.Event(type);
+    newevent.which  = 1;
+    newevent.target = this;
+    newevent.pageX  = event.pageX ? event.pageX : offset.left;
+    newevent.pageY  = event.pageY ? event.pageX : offset.top;
+
+    $(this).trigger(newevent);
+});

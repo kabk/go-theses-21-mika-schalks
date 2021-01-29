@@ -15,7 +15,7 @@ scroll-behavior: smooth;
     --red: rgb(255, 0, 0);
     --dark-blue: rgb(0, 0, 255);
     --white: rgb(255, 255, 255);
-    --grey: rgb(190, 190, 190);
+    --grey: rgb(170, 170, 170);
     --black: rgb(0, 0, 0);
     --bars: 255, 255, 255;
 }
@@ -63,26 +63,16 @@ background: linear-gradient(0deg, rgb(var(--bars)) 0%, rgb(var(--bars)) 10%, rgb
   background-color: var(--grey);
   border-radius: 0px;
 
-  padding-top: 10px;
-
-
-  /*box-shadow: 0 0 30px #333;*/
 }
-
-.chapter:first{
-  border-top: 5pt solid var(--white);
-}
-
-
 
 
 .title{
    position: relative;
-   width: 95%;
+   width: 86%;
    margin: auto;
-   margin-bottom: 10px;
-   filter: drop-shadow(0px 0px 3px grey);
-   /*filter: drop-shadow(0px 0px 5px rgb(var(--bars)));*/
+   filter: drop-shadow(0px 0px 3px var(--black));
+   padding-top: 30px;
+   padding-bottom: 30px;
 }
 
 .part{
@@ -187,11 +177,8 @@ i {
   border-bottom: 5pt solid var(--black);
 }
 
-.header:before{
-  border-top: 5pt solid var(--black);
-  border-bottom: 5pt solid var(--white);
-}
 
+/*
 .header-text{
        position: relative;
        text-align: center;
@@ -207,29 +194,51 @@ i {
        animation-direction: alternate;
 
        padding-top: 5vh;
+}*/
+
+@keyframes yes{
+  0%   {filter: drop-shadow(0px 0px 10px var(--pink));}
+
+  50%  {filter: drop-shadow(0px 0px 10px var(--yellow));}
+
+  100% {filter: drop-shadow(0px 0px 10px var(--pink))}
 }
 
 #queer-cover{
   position: absolute;
   margin: auto;
-  left: 2.5%;
+  left: 7%;
   z-index: 19;
 
+  animation-name: yes;
+  animation-delay: ;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+
 }
+
 
 #queer-cover1{
   position: absolute;
   margin: auto;
-  left: 2.5%;
+  left: 7%;
   z-index: 18;
+filter: drop-shadow(1px 0px 1px var(--pink));
+
+ visibility: hidden;
 
 }
 
 #queer-cover2{
   position: absolute;
   margin: auto;
-  left: 2.5%;
+  left: 7%;
   z-index: 17;
+
+filter: drop-shadow(1px 0px 1px var(--pink));
+visibility: hidden;
 
 }
 
