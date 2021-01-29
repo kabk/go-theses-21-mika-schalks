@@ -1,7 +1,15 @@
 $(window).scroll(function(){;
     w = Math.floor( $(window).scrollTop() );
    $('.chapter').css( 'background-color', '' );
-    if(w<=$('#pilot').offset().top){
+   if(w<=$('#header').offset().top){
+       document.documentElement.style.setProperty('--bars', '255, 255, 255');
+       $('#yellow').css( 'content', 'url()' );
+       $('#light-blue').css( 'content', 'url()' );
+       $('#green').css( 'content', 'url()' );
+       $('#pink').css( 'content', 'url()' );
+       $('#red').css( 'content', 'url()' );
+       $('#dark-blue').css( 'content', 'url()' );
+    }else if(w<=$('#pilot').offset().top){
         document.documentElement.style.setProperty('--bars', '255, 255, 0');
         $('#yellow').css( 'content', 'url("files/triangle.svg")' );
         $('#light-blue').css( 'content', 'url()' );
@@ -75,16 +83,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
-
-$('div.rect', '#queer-cover').bind('taphold', function(event, ui) {
-    var offset = $(this).offset();
-    var type   = $.mobile.touchEnabled ? 'touchstart' : 'mousedown';
-    var newevent = $.Event(type);
-    newevent.which  = 1;
-    newevent.target = this;
-    newevent.pageX  = event.pageX ? event.pageX : offset.left;
-    newevent.pageY  = event.pageY ? event.pageX : offset.top;
-
-    $(this).trigger(newevent);
-});
