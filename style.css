@@ -62,13 +62,9 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 10
   position: relative;
   background-color: var(--grey);
   border-radius: 0px;
-
-}
-
-.chapter:first{
   border-top: 5pt solid var(--white);
-
 }
+
 
 
 .title{
@@ -95,7 +91,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 10
   transition: max-height 1s ease-out;
   box-shadow: inset 0 0 15px black;
   border-top: 5pt solid var(--black);
-  border-bottom: 5pt solid var(--white);
+
 }
 
 
@@ -156,7 +152,6 @@ i {
   display: block;
   margin-bottom: 20px;
   /*filter: drop-shadow(0px 0px 5px rgb(var(--bars)));
-
   background-color: rgb(var(--bars));
   border-radius: 50px;
   box-shadow: 2px 2px 5px black;
@@ -169,17 +164,11 @@ i {
 
 .header{
   width: 96%;
-  height: 100vh;
+  height: auto;
   left: 2%;
   position: relative;
-  background-color: var(--grey);
-
-  border-radius: 0px;
-  padding-bottom: 0px;
-  padding-top: 15px;
-
-
-  border-bottom: 5pt solid var(--black);
+  background-color: #08ff00;
+  padding-bottom:
 }
 
 
@@ -209,19 +198,23 @@ i {
   100% {}
 }
 
-#queer-cover{
-  position: absolute;
-  margin: auto;
-  left: 7%;
-  
-  z-index: 19;
+.cover{
+  position: relative;
+  top:15px;
+  left:0px;
+  width:100%;
+  height:auto;
+  background-color: var(--grey);
 
-  animation-name: yes;
-  animation-delay: ;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  filter: drop-shadow(inset 1px 0px 1px var(--pink));
+  padding-bottom: 5pt;
+}
+
+#queer-cover{
+  position: relative;
+  margin: auto;
+  left: 0px;
+  top: 15px;
+  width: 100vw;
 
 }
 
@@ -249,13 +242,16 @@ filter: drop-shadow(1px 0px 1px var(--pink));
 
 .gradient {
    position: relative;
-   width: 50vw;
-   height:50px;
-   z-index: 30;
+   width: 100vw;
+   height:5pt;
+   bottom: 0px;
+   left:-2%;
     background: linear-gradient(90deg, black, black, black, black,black, #f5ff00, #00ffef, #08ff00, #ff00fc, #ff0000, #0a00ff,black, black, black, black,black);
     background-size: 400vw 200%;
     outline: none;
     animation: AnimationName 6s linear infinite;
+
+
 }
 
 @keyframes AnimationName {
