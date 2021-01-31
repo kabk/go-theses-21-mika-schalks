@@ -1,7 +1,7 @@
 $(window).scroll(function(){;
     w = Math.floor( $(window).scrollTop() );
    $('.chapter').css( 'background-color', '' );
-   if(w<=$('#header').offset().top){
+   if(w<=$('#cover').offset().top){
        document.documentElement.style.setProperty('--bars', '255, 255, 255');
        $('#yellow').css( 'content', 'url()' );
        $('#light-blue').css( 'content', 'url()' );
