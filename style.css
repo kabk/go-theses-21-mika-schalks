@@ -70,6 +70,18 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 10
   border-top: 10pt solid var(--white);
 }
 
+.chapter:nth-last-of-type(even){
+  background-color: var(--grey);
+}
+
+.chapter:nth-last-of-type(odd){
+  background-color:;
+}
+
+.chapter:hover{
+  background-color: white;
+}
+
 
 
 .title{
@@ -83,17 +95,8 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 10
      filter: drop-shadow(6px 6px 8px black);
 }
 
-.chapter:nth-last-of-type(even){
-  background-color: var(--grey);
-}
 
-.chapter:nth-last-of-type(odd){
-  background-color:;
-}
 
-.title:hover .chapter{
-  background-color: white;
-}
 
 .part{
    position: relative;
