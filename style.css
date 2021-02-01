@@ -108,36 +108,43 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 10
 
 
 .part{
-
    position: relative;
    width: 86%;
    margin: auto;
-
    padding-top: 30px;
    padding-bottom: 30px;
-
 }
 
 .panel {
-  background-color:var(--white);
+  position:relative;
+  background-color: rgb(0,0,0,0);
   max-height: 0;
   overflow: hidden;
   transition: max-height 1s ease-out;
   box-shadow: inset 6px 6px 15px black;
   border-top: 10pt solid var(--black);
 
+  width: 100%;
+  margin: auto;
+  z-index: 1;
 }
 
 
 .text{
-  width: 85%;
-  max-width: 85%;
+  position:relative;
+  width: 100%;
+  max-width: 100%;
   text-align: left;
   font-family: Arial, sans-serif;
   font-size: var(--font-size-m);
-  margin-left:7.5%;
   text-indent: 2em;
   line-height: 120%;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  z-index: 0;
 }
 
 p{
@@ -188,6 +195,26 @@ i {
 
 
 }
+
+.slide-image{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  height: 45vh;
+  border-left: 5vw solid white;
+  border-right: 5vw solid white;
+  margin:auto;
+  box-shadow: inset 6px 6px 15px black;
+}
+
+#image-0-1{
+  background-image: url("files/image_mika_schalks.jpg");
+}
+
+
+
 
 .header{
   width: 100%;
@@ -408,6 +435,36 @@ i {
 
 @media only screen and (min-width:800px) {
 
+  .text{
+    position:relative;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size-m);
+    text-indent: 2em;
+    line-height: 120%;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    z-index: 0;
+  }
+
+  .slide-image{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30% auto;
+    height: 80vh;
+    border-left: 20vw solid white;
+    border-right: 20vw solid white;
+    margin:auto;
+    box-shadow: inset 6px 6px 15px black;
+  }
+
   .header, .chapter {
     width:90%;
     margin:auto;
@@ -432,13 +489,7 @@ i {
     content: url("files/cover-wide-24.svg")
   }
 
-  .text{
-    width: 60%;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    margin: auto;
-    font-size: var(--font-size-l);
-  }
+
 
   .script-bottom{
     width: 50%;
