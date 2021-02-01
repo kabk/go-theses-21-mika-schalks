@@ -5,7 +5,7 @@ scroll-behavior: smooth;
 :root {
     --font-size-s: 12pt;
     --font-size-m: 15px;
-    --font-size-l: 20pt;
+    --font-size-l: 17.5pt;
     --font-size-xl: 30pt;
     --line-height1: 20pt;
     --yellow: rgb(255, 255, 0);
@@ -28,6 +28,15 @@ body {
   background-attachment: fixed;
   background-image: url("files/background1.svg");
   background-color: var(--grey);
+  display:block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 @font-face {
@@ -78,8 +87,8 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 10
   background-color:;
 }
 
-.chapter:hover{
-  background-color: white;
+.title:hover{
+  filter: drop-shadow(6px 6px 30px black);
 }
 
 
@@ -99,15 +108,18 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 10
 
 
 .part{
+
    position: relative;
-   width: 95%;
+   width: 86%;
    margin: auto;
-   filter: drop-shadow(0px 0px 5px rgb(var(--bars)));
+
+   padding-top: 30px;
+   padding-bottom: 30px;
 
 }
 
 .panel {
-  background-color: var(--white);
+  background-color:var(--white);
   max-height: 0;
   overflow: hidden;
   transition: max-height 1s ease-out;
@@ -178,7 +190,7 @@ i {
 }
 
 .header{
-  width: 100vw;
+  width: 100%;
   height: auto;
   position: relative;
 
@@ -213,6 +225,7 @@ i {
 }
 
 .cover{
+  content: url("files/long-cover.svg");
   position: relative;
   top:15px;
   left:0px;
@@ -302,7 +315,7 @@ i {
   position: absolute;
   background-color: var(--white);
   width: 100%;
-  height: 50px;
+  height: 100px;
   bottom: 0px;
   margin: 0;
 }
@@ -329,7 +342,7 @@ i {
 
 .color-bar-up{
   height: 101%;
-  width: 20%;
+  width: 7.14%;
   position: relative;
   float: left;
 }
@@ -389,4 +402,49 @@ i {
 
 #black{
   background-color: var(--black);
+}
+
+
+
+@media only screen and (min-width:800px) {
+
+  .header, .chapter {
+    width:90%;
+    margin:auto;
+  }
+
+  .background2{
+    width:90%;
+    left: 5%;
+  }
+
+  /*<img  class="background2" draggable="false" src="files/background2.svg">*/
+
+  .page, .page2{
+    width: 5%;
+  }
+
+  .title, .part{
+    width: 50%;
+  }
+
+  .cover{
+    content: url("files/cover-wide-24.svg")
+  }
+
+  .text{
+    width: 60%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: auto;
+    font-size: var(--font-size-l);
+  }
+
+  .script-bottom{
+    width: 50%;
+  }
+
+  .menu{
+    height: 40px;
+  }
 }
